@@ -9,7 +9,7 @@ body {
   background-position: 0 40px;
 }
 
-h1 small {
+h1 small, h3 small {
     font-size: 14px;
 	padding-left: 5px;
 }
