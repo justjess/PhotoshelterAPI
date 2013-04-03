@@ -1,19 +1,15 @@
 <?php
 	require_once( 'library/photoshelter.class.php' );
-	$args = array( 'username' => 'pcruciatti' );
+	$args = array( 'username' => 'poraschaudhary' );
 	$ps = new PHOTOSHELTER($args);
 	$user = $ps->user_detail();
-	//$ps->print_r_pre($ps);
-	//$ps->print_r_pre($ps->list_gallery());
-	//echo $ps->list_gallery();
-	//echo $ps->user_detail();
 ?>
 <!DOCTYPE html>
 <html lang="en">
 
 	<head>
 		<meta charset="utf-8">
-		<title>Photoshelter API</title>
+		<title><?php echo _CODENAME; ?> v <?php echo _VERSION; ?></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="">
 		<meta name="author" content="Ulhas Vardhan Golchha">
@@ -39,12 +35,12 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</a>
-					<a class="brand" href="/">Photoshelter API</a>
+					<a class="brand" href="/"><?php echo _CODENAME; ?></a>
 					<div class="nav-collapse" id="main-menu">
 						<ul class="nav pull-right" id="main-menu-rights">
 							<li><a href="http://www.technologyunited.in/">Technology United</a></li>
 							<li><a href="http://www.ulhas.net/">Ulhas Vardhan Golchha</a></li>
-							<li><a href="http://github.com/golchha21/photoshelter-api/issues">Feedback/Issues</a></li>
+							<li><a href="https://github.com/golchha21/PhotoshelterAPI/issues">Feedback/Issues</a></li>
 						</ul>
 					</div>
 				</div>
@@ -56,7 +52,7 @@
 				<div class="row">
 					<div class="span12">
 						<div class="page-header">
-							<h1>Photoshelter API<small>v 1.0.0</small></h1>
+							<h1><?php echo _CODENAME; ?><small>v <?php echo _VERSION; ?></small></h1>
 						</div>
 					</div>
 				</div>
