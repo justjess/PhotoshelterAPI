@@ -21,7 +21,7 @@
 			$this->useragent	= ( isset( $useragent ) && !empty( $useragent ) ? $useragent : $this->useragent );
 		}
 		
-		function list_gallery($array = false, $c_in_t = true, $wrap = '<ul class="thumbnails">%s</ul>', $i_wrap = '<li class="span2">%s</li>', $t_wrap = '<div class="thumbnail">%s</div>', $c_wrap = '<div class="caption">%s</div>' ) {
+		function list_gallery( $array = false, $c_in_t = true, $wrap = '<ul class="thumbnails">%s</ul>', $i_wrap = '<li class="span2">%s</li>', $t_wrap = '<div class="thumbnail">%s</div>', $c_wrap = '<div class="caption">%s</div>' ) {
 			$return = '';
 			$gallerys = json_decode($this->get_data("$this->url/gallery-list/?feed=json"));
 			$gallerys = $gallerys->gl;
@@ -39,15 +39,14 @@
 					$return[] = $images;
 				}
 			} else {
-				foreach ($gallerys as $album){
-					if($album->A_MODE=='PUB')
-					{
+				foreach ( $gallerys as $album ) {
+					if( $album->A_MODE=='PUB' ) {
 						$caption 	= vsprintf( $c_wrap, $album->G_NAME );
-						if($c_in_t){
-							$thumbnail 	= vsprintf( $t_wrap, '<img rc="http://cdn.c.photoshelter.com/img-get/' . $album->I_ID . '" >' . $caption);
+						if( $c_in_t ) {
+							$thumbnail 	= vsprintf( $t_wrap, '<img src="http://cdn.c.photoshelter.com/img-get/' . $album->I_ID . '" >' . $caption);
 							$return		.= vsprintf( $i_wrap, '<a href="?gid=' . $album->G_ID . '">' . $thumbnail .'</a>' );
-						}else{
-							$thumbnail 	= vsprintf( $t_wrap, '<img rc="http://cdn.c.photoshelter.com/img-get/' . $album->I_ID . '" >' );
+						} else {
+							$thumbnail 	= vsprintf( $t_wrap, '<img src="http://cdn.c.photoshelter.com/img-get/' . $album->I_ID . '" >' );
 							$return		.= vsprintf( $i_wrap, '<a href="?gid=' . $album->G_ID . '">' . $thumbnail . $caption .'</a>' );
 						}
 					}
@@ -84,14 +83,19 @@
 		}
 		
 		function get_data( $url ) {
-			$ch = curl_init();
-			curl_setopt($ch, CURLOPT_URL, $url);
-			curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-			curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $this->timeout);
-			curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
-			curl_setopt($ch, CURLOPT_USERAGENT, $this->useragent);
-			$data = curl_exec($ch);
-			curl_close($ch);
+			$data = false;
+			if ( ini_get('allow_url_fopen') ) {
+				$data = file_get_contents($url);
+			} elseif ( extension_loaded( 'curl' ) ) {
+				$ch = curl_init();
+				curl_setopt( $ch, CURLOPT_URL, $url );
+				curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1 );
+				curl_setopt( $ch, CURLOPT_CONNECTTIMEOUT, $this->timeout );
+				curl_setopt( $ch, CURLOPT_FOLLOWLOCATION, TRUE );
+				curl_setopt( $ch, CURLOPT_USERAGENT, $this->useragent );
+				$data = curl_exec( $ch );
+				curl_close( $ch );
+			}
 			return $data;
 		}
 		
