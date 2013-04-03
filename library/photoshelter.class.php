@@ -1,5 +1,5 @@
 <?php
-
+	
 	class PHOTOSHELTER {
 		
 		var $url 			= ''; // the username or the complete url.
@@ -38,16 +38,16 @@
 					}
 					$return[] = $images;
 				}
-			}else{
+			} else {
 				foreach ($gallerys as $album){
 					if($album->A_MODE=='PUB')
 					{
 						$caption 	= vsprintf( $c_wrap, $album->G_NAME );
 						if($c_in_t){
-							$thumbnail 	= vsprintf( $t_wrap, '<img src="http://cdn.c.photoshelter.com/img-get/' . $album->I_ID . '" >' . $caption);
+							$thumbnail 	= vsprintf( $t_wrap, '<img rc="http://cdn.c.photoshelter.com/img-get/' . $album->I_ID . '" >' . $caption);
 							$return		.= vsprintf( $i_wrap, '<a href="?gid=' . $album->G_ID . '">' . $thumbnail .'</a>' );
 						}else{
-							$thumbnail 	= vsprintf( $t_wrap, '<img src="http://cdn.c.photoshelter.com/img-get/' . $album->I_ID . '" >' );
+							$thumbnail 	= vsprintf( $t_wrap, '<img rc="http://cdn.c.photoshelter.com/img-get/' . $album->I_ID . '" >' );
 							$return		.= vsprintf( $i_wrap, '<a href="?gid=' . $album->G_ID . '">' . $thumbnail . $caption .'</a>' );
 						}
 					}
@@ -79,7 +79,7 @@
 			$xml = $this->get_data("$this->url/?feed=rss");
 			$xml = simplexml_load_string($xml);
 			$return['_title']		= (string)$xml->channel->title;
-			$return['_updated']		= (string)$xml->channel->pubDate;
+			$return['_updated']		= date('M d, Y',strtotime((string)$xml->channel->pubDate));
 			return $return;
 		}
 		
