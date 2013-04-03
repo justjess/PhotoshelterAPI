@@ -65,21 +65,7 @@
 						<h2><?php echo $user['_title']; ?></h2>
 					</div>
 					<div class="span8">
-						<?php
-							//echo $ps->list_gallery();
-						?>
-						<ul class="thumbnails">
-							<li class="span2"><a href="?gid=G0000qdr5Budx.cw"><div class="thumbnail"><img src="images/portraits/1a.jpg" ><div class="caption">Advertising</div></div></a></li>
-							<li class="span2"><a href="?gid=G0000MZE4Aos.fKU"><div class="thumbnail"><img src="images/portraits/2a.jpg" ><div class="caption">Creatives</div></div></a></li>
-							<li class="span2"><a href="?gid=G00005afpApChGaE"><div class="thumbnail"><img src="images/portraits/3a.jpg" ><div class="caption">Events</div></div></a></li>
-							<li class="span2"><a href="?gid=G0000CtTGXM.eH.s"><div class="thumbnail"><img src="images/portraits/4a.jpg" ><div class="caption">Food Photography</div></div></a></li>
-							<li class="span2"><a href="?gid=G0000inAt1I_XKJg"><div class="thumbnail"><img src="images/portraits/5a.jpg" ><div class="caption">Industrial</div></div></a></li>
-							<li class="span2"><a href="?gid=G00007DiEgNfnS1I"><div class="thumbnail"><img src="images/portraits/6a.jpg" ><div class="caption">Interiors</div></div></a></li>
-							<li class="span2"><a href="?gid=G0000aYLlrcXY3RY"><div class="thumbnail"><img src="images/portraits/7a.jpg" ><div class="caption">Jewellery</div></div></a></li>
-							<li class="span2"><a href="?gid=G0000crCgvt7YSU0"><div class="thumbnail"><img src="images/portraits/8a.jpg" ><div class="caption">Portfolios</div></div></a></li>
-							<li class="span2"><a href="?gid=G0000mgJ5gp55bis"><div class="thumbnail"><img src="images/portraits/9a.jpg" ><div class="caption">Products</div></div></a></li>
-							<li class="span2"><a href="?gid=G0000__JMtxObVow"><div class="thumbnail"><img src="images/portraits/1a.jpg" ><div class="caption">Weddings</div></div></a></li>
-						</ul>
+						<?php echo $ps->list_gallery(); ?>
 					</div>
 				</div>
 			</section>
