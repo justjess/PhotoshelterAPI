@@ -95,23 +95,6 @@
 			return $data;
 		}
 		
-		function save_json_data( $data, $filename ) {
-			$filename = $filename . '.json';
-			$data = json_encode($data);
-			$fp = fopen($filename, 'w');
-			fwrite($fp, $data);
-			fclose($fp);
-		}
-		
-		function get_json_data( $filename ) {
-			$filename = $filename . '.json';
-			$fp = fopen($filename, 'r');
-			$content = fread($fp, filesize($filename));
-			fclose($fp);
-			$array = json_decode($content, true);
-			return $array;
-		}
-		
 		function isValidURL( $url )	{
 			return preg_match($this->regex, $url);
 		}
