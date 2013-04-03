@@ -1,0 +1,160 @@
+/* Body and structure
+-------------------------------------------------- */
+body {
+  position: relative;
+  padding-top: 80px;
+  background-color: #fff;
+  background-image: url(../images/background.png);
+  background-repeat: repeat;
+  background-position: 0 40px;
+}
+
+h1 small {
+    font-size: 14px;
+	padding-left: 5px;
+}
+pre { opacity: .6;}
+pre:hover{ opacity: 1; cursor:pointer;}
+
+.thumbnails {
+	list-style: none;
+	*zoom: 1;
+}
+
+.thumbnails:before,
+.thumbnails:after {
+	display: table;
+	content: "";
+}
+
+.thumbnails:after {
+	clear: both;
+}
+
+.row-fluid .thumbnails {
+	margin-left: 0;
+}
+
+.thumbnails > li {
+	float: left;
+	margin-bottom: 18px;
+	margin-left: 2s0px;
+}
+.thumbnails > li  > a{
+	text-decoration: none;
+	font-size: 12px;
+}
+
+.thumbnails > li  > a:hover {
+	font-weight: bold;
+}
+
+.thumbnail {
+	display: block;
+	font-family: 'Open Sans', sans-serif;
+	background:white;
+	padding: 4px;
+	border: 1px solid #ddd;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+a.thumbnail:hover {
+	border-color: #0088cc;
+	-webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+	-moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+	box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+}
+
+.thumbnail > img {
+	display: block;
+	max-width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.thumbnail .caption {
+	padding: 9px;
+	background:white;
+	text-align:center;
+}
+
+#social_icons {
+  	margin: 0;
+}
+
+#social_icons li {
+  	display: inline-block;
+  	height: 34px;
+  	width: 40px; 
+}
+
+#social_icons li a {
+	display: inline-block;
+	position: relative;
+	text-indent: -9999px;
+	height: 34px;
+  	width: 34px;
+}
+
+#social_icons li a span {
+	position: absolute;
+	top: 0; 
+	left: 0; 
+	bottom: 0; 
+	right: 0;
+}
+
+#social_icons li#email a {
+	background: url(../images/email.png) no-repeat;
+}
+
+#social_icons li#facebook a {
+	background: url(../images/facebook.png) no-repeat;
+}
+
+#social_icons li#twitter a {
+	background: url(../images/twitter.png) no-repeat;
+}
+
+#social_icons li#googleplus a {
+	background: url(../images/googleplus.png) no-repeat;
+}
+
+#social_icons li#linkedin a {
+	background: url(../images/linkedin.png) no-repeat;
+}
+
+#credittuamc{
+	background: url('../images/favicon-credit.png') no-repeat left top transparent;
+	padding: 3px 0px 3px 25px;
+}
+
+/* Responsive Docs
+-------------------------------------------------- */
+@media (max-width: 480px) {
+
+	/* Reduce padding above jumbotron */
+	body { padding-top: 70px; }
+	h1{ font-size: 30px; }
+
+}
+
+
+@media (max-width: 768px) {
+
+	/* Remove any padding from the body */
+	body { padding-top: 0; }
+  
+}
+
+@media (min-width: 768px) and (max-width: 980px) {
+
+	/* Remove any padding from the body */
+	body { padding-top: 0; }
+
+}
