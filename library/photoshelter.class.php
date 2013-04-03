@@ -1,4 +1,6 @@
 <?php
+	define( '_CODENAME', 'Photoshelter API'); 
+	define( '_VERSION', '1.0.1'); 
 	
 	class PHOTOSHELTER {
 		
@@ -43,10 +45,10 @@
 					if( $album->A_MODE=='PUB' ) {
 						$caption 	= vsprintf( $c_wrap, $album->G_NAME );
 						if( $c_in_t ) {
-							$thumbnail 	= vsprintf( $t_wrap, '<img src="http://cdn.c.photoshelter.com/img-get/' . $album->I_ID . '" >' . $caption);
+							$thumbnail 	= vsprintf( $t_wrap, '<img rc="http://cdn.c.photoshelter.com/img-get/' . $album->I_ID . '" >' . $caption);
 							$return		.= vsprintf( $i_wrap, '<a href="?gid=' . $album->G_ID . '">' . $thumbnail .'</a>' );
 						} else {
-							$thumbnail 	= vsprintf( $t_wrap, '<img src="http://cdn.c.photoshelter.com/img-get/' . $album->I_ID . '" >' );
+							$thumbnail 	= vsprintf( $t_wrap, '<img rc="http://cdn.c.photoshelter.com/img-get/' . $album->I_ID . '" >' );
 							$return		.= vsprintf( $i_wrap, '<a href="?gid=' . $album->G_ID . '">' . $thumbnail . $caption .'</a>' );
 						}
 					}
