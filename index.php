@@ -62,7 +62,9 @@
 				</div>
 				<div class="row">
 					<div class="span4">
-						<h2><?php echo $user['_title']; ?></h2>
+						<div class="page-header">
+							<h3><?php echo $user['_title']; ?><small><?php echo $user['_updated']; ?></small></h3>
+						</div>
 					</div>
 					<div class="span8">
 						<?php echo $ps->list_gallery(); ?>
