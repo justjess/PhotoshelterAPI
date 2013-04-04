@@ -54,6 +54,7 @@
 						<div class="page-header">
 							<h1><?php echo _CODENAME; ?><small>v <?php echo _VERSION; ?></small></h1>
 						</div>
+						<?php echo $ps->list_gallery_names(); ?>
 					</div>
 				</div>
 				<div class="row">

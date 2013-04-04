@@ -45,10 +45,10 @@
 					if( $album->A_MODE=='PUB' ) {
 						$caption 	= vsprintf( $c_wrap, $album->G_NAME );
 						if( $c_in_t ) {
-							$thumbnail 	= vsprintf( $t_wrap, '<img rc="http://cdn.c.photoshelter.com/img-get/' . $album->I_ID . '" >' . $caption);
+							$thumbnail 	= vsprintf( $t_wrap, '<img src="http://cdn.c.photoshelter.com/img-get/' . $album->I_ID . '" >' . $caption);
 							$return		.= vsprintf( $i_wrap, '<a href="?gid=' . $album->G_ID . '">' . $thumbnail .'</a>' );
 						} else {
-							$thumbnail 	= vsprintf( $t_wrap, '<img rc="http://cdn.c.photoshelter.com/img-get/' . $album->I_ID . '" >' );
+							$thumbnail 	= vsprintf( $t_wrap, '<img src="http://cdn.c.photoshelter.com/img-get/' . $album->I_ID . '" >' );
 							$return		.= vsprintf( $i_wrap, '<a href="?gid=' . $album->G_ID . '">' . $thumbnail . $caption .'</a>' );
 						}
 					}
@@ -57,7 +57,41 @@
 			}
 			return $return;
 		}
-				
+		
+		function list_gallery_names( $array = false, $count = true, $target = true ) {
+			$return = '';
+			$gallerys = json_decode($this->get_data("$this->url/gallery-list/?feed=json"));
+			$gallerys = $gallerys->gl;
+			if( $array ) {
+				foreach( $gallerys as $album ) {
+					if( $album->A_MODE=='PUB' ) {
+						$images['_id'] 			= $album->G_ID;
+						$images['_name']		= $album->G_NAME;
+						$images['_desc']		= $album->G_DESCRIPTION;
+						$images['_image'] 		= $album->I_ID;
+						$images['_count'] 		= $album->NUM_IMAGES;
+						$images['_created'] 	= $album->G_CTIME;
+						$images['_modified']	= $album->G_MTIME;
+					}
+					$return[] = $images;
+				}
+			} else {
+				$return .= '<ul>';
+				foreach ( $gallerys as $album ) {
+					if( $album->A_MODE=='PUB' ) {
+						if( $count ) {
+							$_target = ' target="_blank" ';
+							$return .= '<li><a' . ( $target ? $_target : ' ' ) . 'href="?gid=' . $album->G_ID . '">' . $album->G_NAME . ' (' . $album->NUM_IMAGES . ')</a></li>';
+						} else {
+							$return .= '<li><a' . ( $target ? $_target : ' ' ) . 'href="?gid=' . $album->G_ID . '">' . $album->G_NAME . '</a></li>';
+						}
+					}
+				}
+				$return .= '</ul>';
+			}
+			return $return;
+		}
+
 		function user_detail() {
 			$xml = $this->get_data("$this->url/?feed=rss");
 			$xml = simplexml_load_string($xml);
