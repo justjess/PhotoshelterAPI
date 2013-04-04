@@ -54,7 +54,6 @@
 						<div class="page-header">
 							<h1><?php echo _CODENAME; ?><small>v <?php echo _VERSION; ?></small></h1>
 						</div>
-						<?php echo $ps->list_gallery_names(); ?>
 					</div>
 				</div>
 				<div class="row">
@@ -62,6 +61,7 @@
 						<div class="page-header">
 							<h3><?php echo $user['_title']; ?><small><?php echo $user['_updated']; ?></small></h3>
 						</div>
+						<?php echo $ps->list_gallery_names(); ?>
 					</div>
 					<div class="span8">
 						<?php echo $ps->list_gallery(); ?>
