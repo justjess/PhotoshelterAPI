@@ -4,11 +4,11 @@
 	
 	class PHOTOSHELTER {
 		
-		var $url 			= ''; // the username or the complete url.
-		var $timeout 		= 5;
-		var $useragent 		= 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.13) Gecko/20080311 Firefox/2.0.0.13';
-		var $regex 			= '/([a-zA-Z0-9]*).photoshelter.com/';
-		var $cache 			= 86400;
+		var $url 	= ''; // the username or the complete url.
+		var $timeout 	= 5;
+		var $useragent 	= 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.13) Gecko/20080311 Firefox/2.0.0.13';
+		var $regex 	= '/([a-zA-Z0-9]*).photoshelter.com/';
+		var $cache 	= 86400;
 
 		function __construct( $args ) {
 			extract($args);
@@ -30,11 +30,11 @@
 			if( $array ) {
 				foreach( $gallerys as $album ) {
 					if( $album->A_MODE=='PUB' ) {
-						$images['_id'] 			= $album->G_ID;
-						$images['_name']		= $album->G_NAME;
-						$images['_desc']		= $album->G_DESCRIPTION;
-						$images['_image'] 		= $album->I_ID;
-						$images['_count'] 		= $album->NUM_IMAGES;
+						$images['_id'] 		= $album->G_ID;
+						$images['_name']	= $album->G_NAME;
+						$images['_desc']	= $album->G_DESCRIPTION;
+						$images['_image'] 	= $album->I_ID;
+						$images['_count'] 	= $album->NUM_IMAGES;
 						$images['_created'] 	= $album->G_CTIME;
 						$images['_modified']	= $album->G_MTIME;
 					}
@@ -57,30 +57,12 @@
 			}
 			return $return;
 		}
-		
-		function list_gallery_image( $galleryid ) {
-			$gallery_il = json_decode(get_data($this->get_data("$this->url/gallery/$galleryid/?feed=json")));
-			if(count($gallery_il)>=1)
-			{
-				$gallery_il = $gallery_il->images;
-				$return = '<div id="makeMeScrollable">';
-				$i = 1;
-				foreach ($gallery_il as $gallery)
-				{
-					$return .= '<img height="400" src="'.$gallery->src.'" value="1" border="0"/>';
-				}
-				$return .= '</div>';
-			}else{
-				$return = '<p class="content_body">No gallery and or image found.</p>';
-			}
-			return $return;
-		}
-		
+				
 		function user_detail() {
 			$xml = $this->get_data("$this->url/?feed=rss");
 			$xml = simplexml_load_string($xml);
-			$return['_title']		= (string)$xml->channel->title;
-			$return['_updated']		= date('M d, Y',strtotime((string)$xml->channel->pubDate));
+			$return['_title']	= (string)$xml->channel->title;
+			$return['_updated']	= date('M d, Y',strtotime((string)$xml->channel->pubDate));
 			return $return;
 		}
 		
@@ -107,7 +89,7 @@
 		
 		function print_r_pre( $data ) {
 			echo '<pre class="prettyprint linenums">';
-			print_r($data);
+			print_r( $data );
 			echo '</pre>';
 		}
 	}
