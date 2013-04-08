@@ -34,7 +34,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</a>
-					<a class="brand" href="/"><?php echo _CODENAME; ?></a>
+					<a class="brand" href="./"><?php echo _CODENAME; ?></a>
 					<div class="nav-collapse" id="main-menu">
 						<ul class="nav pull-right" id="main-menu-rights">
 							<li><a href="http://www.technologyunited.in/">Technology United</a></li>
@@ -59,7 +59,7 @@
 				<div class="row">
 					<div class="span4">
 						<div class="page-header">
-							<h3><?php echo $user['_title']; ?><small><?php echo $user['_updated']; ?></small></h3>
+							<h3><?php echo '<a href="' . $user['_link'] . '" target="_blank">' . $user['_title'] . '</a>'; ?><small><?php echo $user['_updated']; ?></small></h3>
 						</div>
 						<?php echo $ps->list_gallery_names(); ?>
 					</div>
