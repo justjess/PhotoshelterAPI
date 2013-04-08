@@ -14,7 +14,6 @@
 		<meta name="description" content="">
 		<meta name="author" content="Ulhas Vardhan Golchha">
 
-		<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
 		<!--[if lt IE 9]>
 		  <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -56,6 +55,7 @@
 						</div>
 					</div>
 				</div>
+				<?php if ( $user ) { ?>
 				<div class="row">
 					<div class="span4">
 						<div class="page-header">
@@ -67,6 +67,7 @@
 						<?php echo $ps->list_gallery(); ?>
 					</div>
 				</div>
+				<?php } ?>
 			</section>
 
 			<footer class="footer">
