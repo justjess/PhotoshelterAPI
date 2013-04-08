@@ -10,8 +10,7 @@
 	include('bootstrap.min.js');
 	include('jquery.smooth-scroll.min.js');
 	include('jquery.masonry.js');
-	include('prettify.js');
+	include("prettify.js");
 	include('scripts.js');
 	ob_end_flush();
-
 ?>
