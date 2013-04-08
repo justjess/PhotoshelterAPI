@@ -6,7 +6,7 @@ body {
   background-color: #fff;
   background-image: url(../images/background.png);
   background-repeat: repeat;
-  background-position: 0 40px;
+  background-attachment: fixed;
 }
 
 h1 small, h3 small {
