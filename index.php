@@ -51,7 +51,7 @@
 				<div class="row">
 					<div class="span12">
 						<div class="page-header">
-							<h1><?php echo _CODENAME; ?><small>v <?php echo _VERSION; ?></small></h1>
+							<h1><?php echo _CODENAME; ?><small>v <?php echo _VERSION; ?></small><small><a href="<?php echo _URL; ?>" target="_blank" title="<?php echo _CODENAME; ?>">GitHub</a></small></h1>
 						</div>
 					</div>
 				</div>
