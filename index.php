@@ -8,17 +8,18 @@
 <html lang="en">
 
 	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title><?php echo _CODENAME; ?> v <?php echo _VERSION; ?></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="">
+		<meta name="keywords" content="Photoshelter, PhotoshelterAPI, GitHub Project, Ulhas Vardhan Golchha">
+		<meta name="description" content="Unofficial PhotoshelterAPI for putting up the gallery on your non Photoshelter websites.">
 		<meta name="author" content="Ulhas Vardhan Golchha">
-
 		<!--[if lt IE 9]>
-		  <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
-		<link href="css/bootstrap-extended.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css.php" type="text/css" />
+		<link href="https://plus.google.com/100459034318170995980/" rel="publisher">
+		<meta property="fb:admins" content="619145803">
 	</head>
 
 	<body data-spy="scroll">
@@ -97,12 +98,7 @@
 
 		</div>
 		
-		<script src="js/jquery.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/jquery.smooth-scroll.min.js"></script>
-		<script src="js/jquery.masonry.js"></script>
-		<script src="js/prettify.js"></script>
-		<script src="js/scripts.js"></script>
+		<script type='text/javascript' src='js/javascript.js.php'></script>
 		<script type="text/javascript">
 
 		  var _gaq = _gaq || [];
