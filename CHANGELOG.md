@@ -1,7 +1,7 @@
 ### 1.0.3: April 8th, 2013
 * Added some conditional checks.
 * Indentation corrections.
-* Minor bug fixes.
+* Minor bug & css fixes.
 
 ### 1.0.2: April 5th, 2013
 * Added a missed a function.
