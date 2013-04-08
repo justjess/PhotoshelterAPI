@@ -20,7 +20,6 @@
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
 		<link href="css/bootstrap-extended.min.css" rel="stylesheet">
-		<link href="css/docs.css" rel="stylesheet">
 		<link href="css/prettify.css" rel="stylesheet">
 	</head>
 
