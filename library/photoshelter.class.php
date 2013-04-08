@@ -104,6 +104,7 @@
 			if( $xml ) {
 				$xml = simplexml_load_string($xml);
 				$return['_title']	= (string)$xml->channel->title;
+				$return['_link']	= (string)$xml->channel->link;
 				$return['_updated']	= date('M d, Y',strtotime((string)$xml->channel->pubDate));
 			}
 			return $return;
