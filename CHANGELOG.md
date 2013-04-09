@@ -1,3 +1,7 @@
+### 1.0.5: April 9th, 2013
+* Minor bug & css fixes.
+* Integrated Social Trackers & Analytical Tools
+
 ### 1.0.3: April 8th, 2013
 * Added some conditional checks.
 * Indentation corrections.
