@@ -91,17 +91,13 @@ a.thumbnail:hover {
 	text-align:center;
 }
 
-#social_icons {
-  	margin: 0;
-}
-
-#social_icons li {
+.social_icons li {
   	display: inline-block;
   	height: 34px;
   	width: 40px; 
 }
 
-#social_icons li a {
+.social_icons li a {
 	display: inline-block;
 	position: relative;
 	text-indent: -9999px;
@@ -109,7 +105,7 @@ a.thumbnail:hover {
   	width: 34px;
 }
 
-#social_icons li a span {
+.social_icons li a span {
 	position: absolute;
 	top: 0; 
 	left: 0; 
@@ -117,24 +113,45 @@ a.thumbnail:hover {
 	right: 0;
 }
 
-#social_icons li#email a {
-	background: url(../images/email.png) no-repeat;
-}
-
-#social_icons li#facebook a {
+.social_icons li.facebook a {
 	background: url(../images/facebook.png) no-repeat;
 }
 
-#social_icons li#twitter a {
+.social_icons li.twitter a {
 	background: url(../images/twitter.png) no-repeat;
 }
 
-#social_icons li#googleplus a {
+.social_icons li.googleplus a {
 	background: url(../images/googleplus.png) no-repeat;
 }
 
-#social_icons li#linkedin a {
+.social_icons li.linkedin a {
 	background: url(../images/linkedin.png) no-repeat;
+}
+
+/* Social proof buttons from GitHub & Twitter */
+.social {
+  padding: 15px 0;
+  text-align: center;
+  background-color: #f5f5f5;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Quick links on Home */
+.social-buttons {
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.social-buttons li {
+  display: inline-block;
+  padding: 5px 0;
+  line-height: 1;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
 }
 
 #credittuamc{
