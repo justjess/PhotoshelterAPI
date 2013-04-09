@@ -76,13 +76,13 @@
 						<div class="social">
 							<ul class="social-buttons">
 							  <li>
-								<iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=golchha21&amp;repo=PhotoshelterAPI&amp;type=watch&amp;count=true" allowtransparency="true" frameborder="0" height="20px" scrolling="0" width="100px"></iframe>
+								<iframe class="github-btn" src="github-btn.html?user=golchha21&amp;repo=PhotoshelterAPI&amp;type=watch&amp;count=true" allowtransparency="true" frameborder="0" height="20px" scrolling="0" width="100px"></iframe>
 							  </li>
 							  <li>
-								<iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=golchha21&amp;repo=PhotoshelterAPI&amp;type=fork&amp;count=true" allowtransparency="true" frameborder="0" height="20px" scrolling="0" width="102px"></iframe>
+								<iframe class="github-btn" src="github-btn.html?user=golchha21&amp;repo=PhotoshelterAPI&amp;type=fork&amp;count=true" allowtransparency="true" frameborder="0" height="20px" scrolling="0" width="102px"></iframe>
 							  </li>
 							  <li>
-								<iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=golchha21&type=follow&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"></iframe>
+								<iframe class="github-btn" src="github-btn.html?user=golchha21&type=follow&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"></iframe>
 							  </li>
 							  <li>
 								<a href="https://twitter.com/golchha21" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @golchha21</a>
