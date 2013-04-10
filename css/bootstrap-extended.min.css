@@ -91,12 +91,14 @@ a.thumbnail:hover {
 	text-align:center;
 }
 
+.social_icons {
+	margin: 13px 0px 0px;
+}
 .social_icons li {
   	display: inline-block;
-  	height: 34px;
-  	width: 40px; 
+  	height: 24px;
+  	width: 24px; 
 }
-
 .social_icons li a {
 	display: inline-block;
 	position: relative;
@@ -104,7 +106,6 @@ a.thumbnail:hover {
 	height: 34px;
   	width: 34px;
 }
-
 .social_icons li a span {
 	position: absolute;
 	top: 0; 
@@ -112,21 +113,20 @@ a.thumbnail:hover {
 	bottom: 0; 
 	right: 0;
 }
-
 .social_icons li.facebook a {
 	background: url(../images/facebook.png) no-repeat;
 }
-
 .social_icons li.twitter a {
 	background: url(../images/twitter.png) no-repeat;
 }
-
 .social_icons li.googleplus a {
 	background: url(../images/googleplus.png) no-repeat;
 }
-
 .social_icons li.linkedin a {
 	background: url(../images/linkedin.png) no-repeat;
+}
+.social_icons li.github a {
+	background: url(../images/GitHub.png) no-repeat;
 }
 
 /* Social proof buttons from GitHub & Twitter */
