@@ -70,27 +70,13 @@
 					<div class="span12">
 						<div class="social">
 							<ul class="social-buttons">
-							  <li>
-								<iframe class="github-btn" src="github-btn.html?user=golchha21&amp;repo=<?php echo _CODENAME; ?>&amp;type=watch&amp;count=true" allowtransparency="true" frameborder="0" height="20px" scrolling="0" width="100px"></iframe>
-							  </li>
-							  <li>
-								<iframe class="github-btn" src="github-btn.html?user=golchha21&amp;repo=<?php echo _CODENAME; ?>&amp;type=fork&amp;count=true" allowtransparency="true" frameborder="0" height="20px" scrolling="0" width="102px"></iframe>
-							  </li>
-							  <li>
-								<iframe class="github-btn" src="github-btn.html?user=golchha21&type=follow&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"></iframe>
-							  </li>
-							  <li>
-								<a href="https://twitter.com/golchha21" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @golchha21</a>
-							  </li>
-							  <li>
-								<a href="https://twitter.com/share" class="twitter-share-button" data-url="<?php echo _URL; ?>" data-text="Unofficial <?php echo _CODENAME; ?> for putting up the gallery on your non Photoshelter websites." data-via="golchha21">Tweet</a></iframe>
-							  </li>
-							  <li>
-								<span class="g-plusone" data-size="tall" data-annotation="inline" data-width="120" data-href="<?php echo _URL; ?>"></span>
-							  </li>
-							  <li>
-								<span class="fb-like" data-href="<?php echo _URL; ?>" data-send="true" data-layout="button_count" data-width="150" data-show-faces="false"></span>
-							  </li>
+								<li><iframe class="github-btn" src="github-btn.html?user=golchha21&amp;repo=<?php echo _CODENAME; ?>&amp;type=watch&amp;count=true" allowtransparency="true" frameborder="0" height="20px" scrolling="0" width="100px"></iframe></li>
+								<li><iframe class="github-btn" src="github-btn.html?user=golchha21&amp;repo=<?php echo _CODENAME; ?>&amp;type=fork&amp;count=true" allowtransparency="true" frameborder="0" height="20px" scrolling="0" width="102px"></iframe></li>
+								<li><iframe class="github-btn" src="github-btn.html?user=golchha21&type=follow&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"></iframe></li>
+								<li><a href="https://twitter.com/golchha21" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @golchha21</a></li>
+								<li><a href="https://twitter.com/share" class="twitter-share-button" data-url="<?php echo _URL; ?>" data-text="Unofficial <?php echo _CODENAME; ?> for putting up the gallery on your non Photoshelter websites." data-via="golchha21">Tweet</a></iframe></li>
+								<li><span class="g-plusone" data-size="tall" data-annotation="inline" data-width="120" data-href="<?php echo _URL; ?>"></span></li>
+								<li><span class="fb-like" data-href="<?php echo _URL; ?>" data-send="true" data-layout="button_count" data-width="150" data-show-faces="false"></span></li>
 							</ul>
 						</div>
 					</div>
