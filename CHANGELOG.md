@@ -1,4 +1,7 @@
-### 1.0.5: April 9th, 2013
+### 1.0.5: April 10th, 2013
+* Integration bug fixes for Social Trackers & Analytical Tools
+
+### 1.0.4: April 9th, 2013
 * Minor bug & css fixes.
 * Integrated Social Trackers & Analytical Tools
 
