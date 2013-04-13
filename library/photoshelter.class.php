@@ -1,15 +1,20 @@
 <?php
 	define( '_CODENAME', 'PhotoshelterAPI'); 
-	define( '_VERSION', '1.0.5'); 
+	define( '_VERSION', '1.0.6'); 
 	define( '_URL', 'https://github.com/golchha21/PhotoshelterAPI'); 
 	
 	class PHOTOSHELTER {
 		
-		var $url 		= ''; // the username or the complete url.
-		var $timeout 	= 5;
-		var $useragent 	= 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.13) Gecko/20080311 Firefox/2.0.0.13';
-		var $regex 		= '/([a-zA-Z0-9]*).photoshelter.com/';
+		// CURL timeout
+		private $timeout 	= 5;
+		// Photoshelter URL (to be set by the constructor)
+		private $url 		= '';
+		// CURL Useragent
+		private $useragent 	= 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.13) Gecko/20080311 Firefox/2.0.0.13';
+		// Photoshelter URL regex
+		private $regex 		= '/([a-zA-Z0-9]*).photoshelter.com/';
 
+		// Constructor
 		function __construct( $args ) {
 			extract($args);
 			if(isset($username)){
@@ -23,6 +28,7 @@
 			$this->useragent	= ( isset( $useragent ) && !empty( $useragent ) ? $useragent : $this->useragent );
 		}
 		
+		// Returns the Photoshelter Gallery as an array or structured list so as to produce a photogallery
 		function list_gallery( $array = false, $c_in_t = true, $wrap = '<ul class="thumbnails">%s</ul>', $i_wrap = '<li class="span2">%s</li>', $t_wrap = '<div class="thumbnail">%s</div>', $c_wrap = '<div class="caption">%s</div>' ) {
 			$return = '';
 			$gallerys = $this->get_data( "$this->url/gallery-list/?feed=json" );
@@ -61,6 +67,7 @@
 			return $return;
 		}
 		
+		// Returns the Photoshelter Gallery as a list or an array w/, w/o count.
 		function list_gallery_names( $array = false, $count = true, $target = true ) {
 			$return = '';
 			$gallerys = $this->get_data( "$this->url/gallery-list/?feed=json" );
@@ -97,7 +104,8 @@
 			}
 			return $return;
 		}
-
+			
+		// Returns the user details form the rss feed.
 		function user_detail() {
 			$return = false;
 			$xml = $this->get_data("$this->url/?feed=rss");
@@ -110,7 +118,8 @@
 			return $return;
 		}
 		
-		function get_data( $url ) {
+		// Gets the content from the URL
+		private function get_data( $url ) {
 			$return = false;
 			if ( ini_get('allow_url_fopen') ) {
 				$return = file_get_contents($url);
@@ -127,10 +136,12 @@
 			return $return;
 		}
 		
-		function isValidURL( $url )	{
+		// Return whether the url is valid photoshelter url or not.
+		private function isValidURL( $url )	{
 			return preg_match($this->regex, $url);
 		}
 		
+		// Prints the content supplied with <pre> tags
 		function print_r_pre( $data ) {
 			echo '<pre class="prettyprint linenums">';
 			print_r( $data );
