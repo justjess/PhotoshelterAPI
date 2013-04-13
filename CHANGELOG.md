@@ -1,3 +1,8 @@
+### 1.0.6: April 13th, 2013
+* Added comments to the class.
+* Made the class variables private.
+* Made two of the functions private.
+
 ### 1.0.5: April 10th, 2013
 * Integration bug fixes for Social Trackers & Analytical Tools
 
