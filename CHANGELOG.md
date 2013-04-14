@@ -1,3 +1,6 @@
+### 1.0.7: April 14th, 2013
+* Changed function names
+
 ### 1.0.6: April 13th, 2013
 * Added comments to the class.
 * Made the class variables private.
