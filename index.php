@@ -2,7 +2,7 @@
 	require_once( 'library/photoshelter.class.php' );
 	$args = array( 'username' => 'poraschaudhary' );
 	$ps = new PHOTOSHELTER($args);
-	$user = $ps->user_detail();
+	$user = $ps->userDetail();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -56,10 +56,10 @@
 						<div class="page-header">
 							<h3><?php echo '<a href="' . $user['_link'] . '" target="_blank" onclick="_gaq.push([\'_trackEvent\', \'<?php echo _CODENAME; ?> Body actions\', \'<?php echo _CODENAME; ?> Body links\', \'' . $user['_title'] . '\']);">' . $user['_title'] . '</a>'; ?><small><?php echo $user['_updated']; ?></small></h3>
 						</div>
-						<?php echo $ps->list_gallery_names(); ?>
+						<?php echo $ps->listGalleryNames(); ?>
 					</div>
 					<div class="span8">
-						<?php echo $ps->list_gallery(); ?>
+						<?php echo $ps->listGallery(); ?>
 					</div>
 				</div>
 				<?php } ?>

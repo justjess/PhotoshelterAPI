@@ -1,6 +1,6 @@
 <?php
 	define( '_CODENAME', 'PhotoshelterAPI'); 
-	define( '_VERSION', '1.0.6'); 
+	define( '_VERSION', '1.0.7'); 
 	define( '_URL', 'https://github.com/golchha21/PhotoshelterAPI'); 
 	
 	class PHOTOSHELTER {
@@ -29,9 +29,9 @@
 		}
 		
 		// Returns the Photoshelter Gallery as an array or structured list so as to produce a photogallery
-		function list_gallery( $array = false, $c_in_t = true, $wrap = '<ul class="thumbnails">%s</ul>', $i_wrap = '<li class="span2">%s</li>', $t_wrap = '<div class="thumbnail">%s</div>', $c_wrap = '<div class="caption">%s</div>' ) {
+		function listGallery( $array = false, $c_in_t = true, $wrap = '<ul class="thumbnails">%s</ul>', $i_wrap = '<li class="span2">%s</li>', $t_wrap = '<div class="thumbnail">%s</div>', $c_wrap = '<div class="caption">%s</div>' ) {
 			$return = '';
-			$gallerys = $this->get_data( "$this->url/gallery-list/?feed=json" );
+			$gallerys = $this->getDataFromUrl( "$this->url/gallery-list/?feed=json" );
 			if( $gallerys ) {
 				$gallerys = json_decode( $gallerys );
 				$gallerys = $gallerys->gl;
@@ -68,9 +68,9 @@
 		}
 		
 		// Returns the Photoshelter Gallery as a list or an array w/, w/o count.
-		function list_gallery_names( $array = false, $count = true, $target = true ) {
+		function listGalleryNames( $array = false, $count = true, $target = true ) {
 			$return = '';
-			$gallerys = $this->get_data( "$this->url/gallery-list/?feed=json" );
+			$gallerys = $this->getDataFromUrl( "$this->url/gallery-list/?feed=json" );
 			if( $gallerys ) {
 				$gallerys = json_decode( $gallerys );
 				$gallerys = $gallerys->gl;
@@ -106,9 +106,9 @@
 		}
 			
 		// Returns the user details form the rss feed.
-		function user_detail() {
+		function userDetail() {
 			$return = false;
-			$xml = $this->get_data("$this->url/?feed=rss");
+			$xml = $this->getDataFromUrl("$this->url/?feed=rss");
 			if( $xml ) {
 				$xml = simplexml_load_string($xml);
 				$return['_title']	= (string)$xml->channel->title;
@@ -119,7 +119,7 @@
 		}
 		
 		// Gets the content from the URL
-		private function get_data( $url ) {
+		function getDataFromUrl( $url ) {
 			$return = false;
 			if ( ini_get('allow_url_fopen') ) {
 				$return = file_get_contents($url);
@@ -142,7 +142,7 @@
 		}
 		
 		// Prints the content supplied with <pre> tags
-		function print_r_pre( $data ) {
+		function putPre( $data ) {
 			echo '<pre class="prettyprint linenums">';
 			print_r( $data );
 			echo '</pre>';
