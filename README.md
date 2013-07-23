@@ -4,7 +4,7 @@ Unofficial PhotoshelterAPI for putting up the gallery on your non Photoshelter w
 This API will be able to list all the public ablums available in your Photoshelter account.
 
 ## Demonstration
-* [PhotoshelterAPI](http://goo.gl/oTLdu)
+* [PhotoshelterAPI](http://goo.gl/Za9av7)
 
 ## Features
 * Lists user details as available & last updated date.
