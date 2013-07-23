@@ -87,7 +87,7 @@
 						<div class="page-header">
 							<h4>Credits: </h4>
 						</div>
-						<p>Supported by <a href="http://www.technologyunited.in/" id="credittuamc" target="_blank" onclick="_gaq.push(['_trackEvent', '<?php echo _CODENAME; ?> Footer actions', '<?php echo _CODENAME; ?> Footer links', 'Supported by']);">Technology United</a>. Developed by <a href="http://www.ulhas.net" target="_blank" onclick="_gaq.push(['_trackEvent', '<?php echo _CODENAME; ?> Footer actions', 'Social links', 'Developed by Ulhas Vardhan Golchha']);">Ulhas Vardhan Golchha</a>.<br/>Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank" onclick="_gaq.push(['_trackEvent', '<?php echo _CODENAME; ?> Footer actions', 'Social links', 'Apache License v2.0']);">Apache License v2.0</a>.</p>
+						<p>Developed by <a href="http://www.ulhas.net" target="_blank" onclick="_gaq.push(['_trackEvent', '<?php echo _CODENAME; ?> Footer actions', 'Social links', 'Developed by Ulhas Vardhan Golchha']);">Ulhas Vardhan Golchha</a>.<br/>Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank" onclick="_gaq.push(['_trackEvent', '<?php echo _CODENAME; ?> Footer actions', 'Social links', 'Apache License v2.0']);">Apache License v2.0</a>.</p>
 					</div>
 					<div class="span3">
 						<div class="page-header">
@@ -112,7 +112,7 @@
 				<hr>
 				<div class="row">
 					<div class="span12">
-						<p class="copyright pull-left">Copyright &copy; 2013, <a href="http://www.technologyunited.in/" id="credittuamc" target="_blank" onclick="_gaq.push(['_trackEvent', '<?php echo _CODENAME; ?> Footer actions', '<?php echo _CODENAME; ?> Footer links', 'Copyright']);" title="Technology United">Technology United</a>. All rights reserved.</p>
+						<p class="copyright pull-left">Copyright &copy; 2013, <a href="http://www.ulhas.net/" id="credittuamc" target="_blank" onclick="_gaq.push(['_trackEvent', '<?php echo _CODENAME; ?> Footer actions', '<?php echo _CODENAME; ?> Footer links', 'Copyright']);" title="Ulhas Vardhan Golchha">Ulhas Vardhan Golchha</a>. All rights reserved.</p>
 						<p class="pull-right"><a href="#top">Back to top</a></p>
 					</div>
 				</div>
