@@ -1,4 +1,4 @@
-### 1.0.8: July 7th, 2013
+### 1.0.8: July 23rd, 2013
 * Updated Google Analytics
 * Added Error Reporting directive
 * Updated version
