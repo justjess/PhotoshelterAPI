@@ -1,7 +1,8 @@
 <?php
 	define( '_CODENAME', 'PhotoshelterAPI'); 
 	define( '_VERSION', '1.0.7'); 
-	define( '_URL', 'https://github.com/golchha21/PhotoshelterAPI'); 
+	define( '_URL', 'https://github.com/golchha21/PhotoshelterAPI');
+	error_reporting(E_ERROR);
 	
 	class PHOTOSHELTER {
 		
