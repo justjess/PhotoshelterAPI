@@ -13,6 +13,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="keywords" content="Photoshelter, PhotoshelterAPI, GitHub Project, Ulhas Vardhan Golchha">
 		<meta name="description" content="Unofficial PhotoshelterAPI for putting up the gallery on your non Photoshelter websites.">
+		<meta name="author" content="Ulhas Vardhan Golchha">
 		
 		<link href="https://plus.google.com/100459034318170995980" rel="author">
 		<meta property="fb:admins" content="619145803">
