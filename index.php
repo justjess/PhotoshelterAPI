@@ -8,21 +8,37 @@
 <html lang="en">
 
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title><?php echo _CODENAME; ?> v <?php echo _VERSION; ?></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="keywords" content="Photoshelter, <?php echo _CODENAME; ?>, GitHub Project, Ulhas Vardhan Golchha">
-		<meta name="description" content="Unofficial <?php echo _CODENAME; ?> for putting up the gallery on your non Photoshelter websites.">
-		<meta name="author" content="Ulhas Vardhan Golchha">
+		<meta name="keywords" content="Photoshelter, PhotoshelterAPI, GitHub Project, Ulhas Vardhan Golchha">
+		<meta name="description" content="Unofficial PhotoshelterAPI for putting up the gallery on your non Photoshelter websites.">
+		
 		<link href="https://plus.google.com/100459034318170995980" rel="author">
 		<meta property="fb:admins" content="619145803">
-		<meta property="article:author" content="https://www.facebook.com/golchha21" >
+		<meta property="fb:profile_id" content="619145803">
+		<meta content="mid:35579902" name="linkedin:owner">
+
+		<meta property="og:title" content="<?php echo _CODENAME; ?> v <?php echo _VERSION; ?> - Demo">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="http://www.ulhas.net/GitHub/PhotoshelterAPI">
+		<meta property="og:image" content="http://www.ulhas.net/GitHub/PhotoshelterAPI/images/chart.png">
+		<meta property="og:description" content="Unofficial PhotoshelterAPI for putting up the gallery on your non Photoshelter websites.">
+		
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:url" content="http://www.ulhas.net/GitHub/PhotoshelterAPI">
+		<meta name="twitter:title" content="PhotoshelterAPI">
+		<meta name="twitter:description" content="Unofficial PhotoshelterAPI for putting up the gallery on your non Photoshelter websites.">
+		<meta name="twitter:image" content="http://www.ulhas.net/GitHub/PhotoshelterAPI/images/chart.png">
+		<meta name="twitter:site" content="@golchha21">
+		<meta name="twitter:creator" content="@golchha21">
+  
 		<!--[if lt IE 9]>
 		<script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
-		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
-		<link rel="stylesheet" href="css/bootstrap-responsive.min.css" type="text/css" />
-		<link rel="stylesheet" href="css/bootstrap-extended.min.css" type="text/css" />	
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+		<link rel="stylesheet" href="css/bootstrap-responsive.min.css" type="text/css">
+		<link rel="stylesheet" href="css/bootstrap-extended.min.css" type="text/css">	
 	</head>
 
 	<body data-spy="scroll">
@@ -87,7 +103,7 @@
 						<div class="page-header">
 							<h4>Credits: </h4>
 						</div>
-						<p>Developed by <a href="http://www.ulhas.net" target="_blank" onclick="_gaq.push(['_trackEvent', '<?php echo _CODENAME; ?> Footer actions', 'Social links', 'Developed by Ulhas Vardhan Golchha']);">Ulhas Vardhan Golchha</a>.<br/>Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank" onclick="_gaq.push(['_trackEvent', '<?php echo _CODENAME; ?> Footer actions', 'Social links', 'Apache License v2.0']);">Apache License v2.0</a>.</p>
+						<p>Developed by <a href="http://www.ulhas.net" target="_blank" onclick="_gaq.push(['_trackEvent', '<?php echo _CODENAME; ?> Footer actions', 'Social links', 'Developed by Ulhas Vardhan Golchha']);">Ulhas Vardhan Golchha</a>.<br>Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank" onclick="_gaq.push(['_trackEvent', '<?php echo _CODENAME; ?> Footer actions', 'Social links', 'Apache License v2.0']);">Apache License v2.0</a>.</p>
 					</div>
 					<div class="span3">
 						<div class="page-header">
