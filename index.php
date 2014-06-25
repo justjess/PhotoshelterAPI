@@ -1,6 +1,6 @@
 <?php
 	require_once( 'library/photoshelter.class.php' );
-	$args = array( 'username' => 'poraschaudhary' );
+	$args = array( 'username' => 'justjess' );
 	$ps = new PHOTOSHELTER($args);
 	$user = $ps->userDetail();
 ?>
