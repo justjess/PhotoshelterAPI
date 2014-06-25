@@ -48,13 +48,13 @@
 			<div class="navbar-inner">
 				<div class="container">
 					<a class="brand" href="./" onclick="_gaq.push(['_trackEvent', '<?php echo _CODENAME; ?> Navigation actions', '<?php echo _CODENAME; ?> Navigation links', '<?php echo _CODENAME; ?> Logo']);"><?php echo _CODENAME; ?></a>
-					<ul class="social_icons pull-right">
+					<!--<ul class="social_icons pull-right">
 						<li class="facebook"><a data-original-title="Find me on Facebook" href="https://www.facebook.com/golchha21" rel="tooltip" target="_blank" onclick="_gaq.push(['_trackEvent', '<?php echo _CODENAME; ?> Navigation actions', 'Social links', 'Facebook']);">Facebook<span></span></a></li>
 						<li class="twitter"><a data-original-title="Follow me on Twitter" href="https://www.twitter.com/golchha21" rel="tooltip" target="_blank" onclick="_gaq.push(['_trackEvent', '<?php echo _CODENAME; ?> Navigation actions', 'Social links', 'Twitter']);">Twitter<span></span></a></li>
 						<li class="googleplus"><a data-original-title="Follow me on Google+" href="https://plus.google.com/100459034318170995980" rel="tooltip" target="_blank" onclick="_gaq.push(['_trackEvent', '<?php echo _CODENAME; ?> Navigation actions', 'Social links', 'Google+']);">Google+<span></span></a></li>
 						<li class="linkedin"><a data-original-title="Follow me on LinkedIn" href="http://www.linkedin.com/in/golchha21" rel="tooltip" target="_blank" onclick="_gaq.push(['_trackEvent', '<?php echo _CODENAME; ?> Navigation actions', 'Social links', 'LinkedIn']);">LinkedIn+<span></span></a></li>
 						<li class="github"><a data-original-title="Follow me on GitHub" href="https://github.com/golchha21" rel="tooltip" target="_blank" onclick="_gaq.push(['_trackEvent', '<?php echo _CODENAME; ?> Navigation actions', 'Social links', 'GitHub']);">GitHub<span></span></a></li>
-					</ul>
+					</ul> -->
 				</div>
 			</div>
 		</div>
@@ -84,7 +84,7 @@
 			</section>
 
 			<footer class="footer">
-				<div class="row">
+				<!--<div class="row">
 					<div class="span12">
 						<div class="social">
 							<ul class="social-buttons">
@@ -126,7 +126,7 @@
 							<li><a href="https://github.com/golchha21/<?php echo _CODENAME; ?>" target="_blank" onclick="_gaq.push(['_trackEvent', '<?php echo _CODENAME; ?> Footer actions', '<?php echo _CODENAME; ?> Footer links', '<?php echo _CODENAME; ?>']);"><?php echo _CODENAME; ?></a></li>
 						</ul>
 					</div>
-				</div>
+				</div> -->
 				<hr>
 				<div class="row">
 					<div class="span12">
