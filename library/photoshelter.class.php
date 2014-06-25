@@ -94,7 +94,7 @@
 						if( $album->A_MODE=='PUB' ) {
 							if( $count ) {
 								$_target = ' target="_blank" ';
-								$return .= '<li><a' . ( $target ? $_target : ' ' ) . 'href="?gid=' . $album->G_ID . '">' . $album->G_NAME . ' (' . $album->NUM_IMAGES . ')</a></li>';
+								$return .= '<li><a' . ( $target ? $_target : ' ' ) . 'href="?gid=' . $album->G_ID . '">' . $album->G_NAME .   ' (' . $album->NUM_IMAGES . ')</a><br>' . $album->G_DESCRIPTION . '</li>';
 							} else {
 								$return .= '<li><a' . ( $target ? $_target : ' ' ) . 'href="?gid=' . $album->G_ID . '">' . $album->G_NAME . '</a></li>';
 							}
